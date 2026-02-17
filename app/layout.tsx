@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GMG Technology - Innovative Technology Solutions',
-  description: 'GMG Technology - Leading provider of innovative technology solutions and services',
+  title: 'GMG Technology - Revolutionizing Golf Technology',
+  description: 'GMG Technology builds innovative golf technology platforms including Weekend Warrior mobile app and Club Pro GMS. Founded by Chris Gatlin and Taylor Mobley.',
 }
 
 export default function RootLayout({
