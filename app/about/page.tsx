@@ -2,29 +2,29 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-dark-bg text-white">
       {/* Navigation */}
-      <nav className="bg-dark-surface border-b border-dark-border sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
+      <nav className="fixed top-0 w-full bg-dark-bg/80 backdrop-blur-xl border-b border-dark-border z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex-shrink-0">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-                GMG Technology
+              <h1 className="text-2xl font-black bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
+                GMG TECH
               </h1>
             </Link>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <Link href="/" className="text-dark-muted hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <div className="ml-10 flex items-baseline space-x-8">
+                <Link href="/" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
                   Home
                 </Link>
-                <Link href="/about" className="text-dark-text hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <Link href="/about" className="text-white hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
                   About
                 </Link>
-                <Link href="/products" className="text-dark-muted hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                <Link href="/products" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
                   Products
                 </Link>
-                <Link href="/contact" className="text-dark-muted hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Contact
+                <Link href="/contact" className="bg-gradient-to-r from-primary-500 to-accent-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary-500/50 transition-all transform hover:scale-105">
+                  Get Started
                 </Link>
               </div>
             </div>
@@ -33,44 +33,56 @@ export default function About() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg pt-20 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.1),transparent_50%)]"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-primary-200 to-primary-400 bg-clip-text text-transparent">
-              About GMG Technology
+            <div className="inline-block px-4 py-2 bg-primary-500/20 rounded-full mb-6">
+              <span className="text-primary-400 font-bold text-sm">OUR STORY</span>
+            </div>
+            <h1 className="text-7xl md:text-9xl font-black mb-6">
+              <span className="bg-gradient-to-r from-white via-primary-300 to-accent-400 bg-clip-text text-transparent">
+                We Build
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
+                Golf Tech.
+              </span>
             </h1>
-            <p className="text-xl text-dark-muted max-w-3xl mx-auto">
-              Building the future of golf technology, one innovation at a time
+            <p className="text-2xl text-gray-400 max-w-3xl mx-auto font-light">
+              No corporate BS. No legacy code. Just products that actually work.
             </p>
           </div>
         </div>
       </section>
 
       {/* Company Story */}
-      <section className="py-20 bg-dark-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-dark-card border border-dark-border rounded-xl p-8">
-            <h2 className="text-3xl font-bold text-white mb-6">Our Story</h2>
-            <div className="space-y-4 text-dark-muted leading-relaxed">
+      <section className="py-20 bg-dark-surface relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-500/5 to-transparent"></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-dark-card border border-dark-border rounded-2xl p-10">
+            <h2 className="text-4xl font-black text-white mb-8">The Real Talk</h2>
+            <div className="space-y-6 text-gray-400 leading-relaxed text-lg">
               <p>
-                GMG Technology was founded with a simple mission: to revolutionize the golf industry through innovative technology solutions. 
-                We recognized that golfers and golf courses were using outdated, fragmented systems that didn&apos;t meet their modern needs.
+                Golf tech has been stuck in 2010. We&apos;re here to change that.
               </p>
               <p>
-                Starting with <strong className="text-white">Weekend Warrior</strong>, we built a comprehensive mobile app that brings 
-                together scoring, betting games, tournaments, and social features into one seamless experience. The platform supports 
-                over 8 different game formats including Wolf, Skins, Stableford, and Chicago, with advanced betting systems and automated 
-                payout calculations.
+                <strong className="text-white">Weekend Warrior</strong> started because we were tired of using garbage apps 
+                that couldn&apos;t handle a simple Wolf game. So we built our own. Now it&apos;s the most comprehensive golf 
+                game management platform out there. <span className="text-primary-400 font-semibold">8+ game formats. Advanced betting. 
+                Real-time leaderboards. It just works.</span>
               </p>
               <p>
-                Building on that success, we developed <strong className="text-white">Club Pro GMS</strong>, a powerful B2B SaaS platform 
-                for golf courses. This enterprise solution includes tee time management, tournament hosting, member management, and 
-                industry-first AI-powered features like voice-activated booking assistants.
+                Then courses started asking us for help. They were paying $500/month for software that looked like it was 
+                built in 2005. So we built <strong className="text-white">Club Pro GMS</strong> - a modern platform with 
+                AI features that actually make sense. <span className="text-accent-400 font-semibold">Voice-activated booking? 
+                Yeah, we did that.</span>
               </p>
               <p>
-                Today, GMG Technology serves thousands of golfers and multiple golf courses, with a vision to become the leading 
-                technology platform in the golf industry. Our commitment to innovation, user experience, and customer success drives 
-                everything we do.
+                We&apos;re not here to be another golf tech company. We&apos;re here to be <span className="text-white font-bold">the</span> golf tech company. 
+                The one that ships fast, builds better, and doesn&apos;t make excuses.
               </p>
             </div>
           </div>
@@ -78,62 +90,78 @@ export default function About() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-20 bg-dark-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Founders</h2>
-            <p className="text-lg text-dark-muted">The visionaries behind GMG Technology</p>
+      <section className="py-32 bg-dark-bg relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,197,94,0.05),transparent_70%)]"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-block px-4 py-2 bg-primary-500/20 rounded-full mb-6">
+              <span className="text-primary-400 font-bold text-sm">THE FOUNDERS</span>
+            </div>
+            <h2 className="text-6xl md:text-7xl font-black mb-6">
+              <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                Built by Golfers.
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                For Golfers.
+              </span>
+            </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Chris Gatlin */}
-            <div className="bg-dark-card border border-dark-border rounded-xl p-8 hover:border-primary-600 transition-all">
+            <div className="group bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-primary-500 transition-all hover:shadow-2xl hover:shadow-primary-500/20">
               <div className="flex flex-col items-center mb-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4">
-                  CG
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl flex items-center justify-center text-4xl font-black text-white transform group-hover:scale-110 transition-transform">
+                    CG
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-primary-500 rounded-full border-4 border-dark-card animate-pulse"></div>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Chris Gatlin</h3>
-                <p className="text-primary-400 font-semibold mb-4">Founder & CEO</p>
+                <h3 className="text-4xl font-black text-white mb-2">Chris Gatlin</h3>
+                <p className="text-primary-400 font-bold text-xl">Founder & CEO</p>
               </div>
-              <div className="space-y-3 text-dark-muted">
+              <div className="space-y-4 text-gray-400 leading-relaxed">
                 <p>
-                  Chris Gatlin is the visionary founder and CEO of GMG Technology. With a deep passion for both technology and golf, 
-                  Chris identified the need for modern solutions in an industry that had been slow to adopt new technologies.
+                  The guy who codes. Full-stack developer, product strategist, and the reason this company exists. 
+                  <span className="text-white font-semibold"> Ships fast. Builds better.</span>
                 </p>
                 <p>
-                  As a full-stack developer and product strategist, Chris leads the technical direction of both Weekend Warrior and 
-                  Club Pro GMS. His expertise spans mobile app development, cloud architecture, database design, and AI integration.
+                  Chris leads the technical direction of both Weekend Warrior and Club Pro GMS. When he&apos;s not coding, 
+                  he&apos;s probably on the course testing new features. <span className="text-primary-400">Or thinking about them.</span>
                 </p>
-                <p>
-                  Under Chris&apos;s leadership, GMG Technology has grown from a concept to a thriving technology company serving 
-                  the golf community with innovative, user-focused products.
-                </p>
+                <div className="pt-4 border-t border-dark-border">
+                  <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>
+                  <p className="text-gray-300">Built the first Weekend Warrior prototype in 3 weeks. Still runs on that code.</p>
+                </div>
               </div>
             </div>
 
             {/* Taylor Mobley */}
-            <div className="bg-dark-card border border-dark-border rounded-xl p-8 hover:border-primary-600 transition-all">
+            <div className="group bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-accent-500 transition-all hover:shadow-2xl hover:shadow-accent-500/20">
               <div className="flex flex-col items-center mb-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center text-3xl font-bold text-white mb-4">
-                  TM
+                <div className="relative mb-4">
+                  <div className="w-32 h-32 bg-gradient-to-br from-accent-500 to-primary-500 rounded-2xl flex items-center justify-center text-4xl font-black text-white transform group-hover:scale-110 transition-transform">
+                    TM
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-accent-500 rounded-full border-4 border-dark-card animate-pulse"></div>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Taylor Mobley</h3>
-                <p className="text-primary-400 font-semibold mb-4">Co-Founder</p>
+                <h3 className="text-4xl font-black text-white mb-2">Taylor Mobley</h3>
+                <p className="text-accent-400 font-bold text-xl">Co-Founder</p>
               </div>
-              <div className="space-y-3 text-dark-muted">
+              <div className="space-y-4 text-gray-400 leading-relaxed">
                 <p>
-                  Taylor Mobley brings strategic vision and technical expertise to GMG Technology as co-founder. With a focus on 
-                  scalable architecture and exceptional user experiences, Taylor plays a crucial role in product development and 
-                  business strategy.
+                  The strategic mind. System architect, UX wizard, and the one who makes sure we don&apos;t build garbage. 
+                  <span className="text-white font-semibold"> Scales right. Thinks bigger.</span>
                 </p>
                 <p>
-                  Taylor&apos;s background in system design and business development has been instrumental in shaping both the 
-                  technical foundation and go-to-market strategies for GMG Technology&apos;s products.
+                  Taylor brings the vision and execution that turns good ideas into great products. When the architecture 
+                  needs to scale, Taylor&apos;s the one who makes it happen. <span className="text-accent-400">Without breaking things.</span>
                 </p>
-                <p>
-                  Together with Chris, Taylor helps drive innovation and ensures that GMG Technology continues to deliver 
-                  cutting-edge solutions that meet the evolving needs of golfers and golf courses.
-                </p>
+                <div className="pt-4 border-t border-dark-border">
+                  <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>
+                  <p className="text-gray-300">Designed the Club Pro GMS architecture in one whiteboard session. Still using it.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -141,47 +169,61 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-dark-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Values</h2>
-            <p className="text-lg text-dark-muted">What drives us every day</p>
+      <section className="py-32 bg-dark-surface relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-500/5 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-block px-4 py-2 bg-primary-500/20 rounded-full mb-6">
+              <span className="text-primary-400 font-bold text-sm">WHAT WE STAND FOR</span>
+            </div>
+            <h2 className="text-6xl md:text-7xl font-black mb-6">
+              <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                No BS.
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                Just Results.
+              </span>
+            </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-dark-card border border-dark-border rounded-xl p-8 text-center">
-              <div className="bg-primary-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Innovation</h3>
-              <p className="text-dark-muted">
-                We constantly push the boundaries of what&apos;s possible, bringing cutting-edge technology to the golf industry.
-              </p>
-            </div>
-            
-            <div className="bg-dark-card border border-dark-border rounded-xl p-8 text-center">
-              <div className="bg-primary-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">User-Centric</h3>
-              <p className="text-dark-muted">
-                Every feature we build starts with understanding our users&apos; needs and delivering exceptional experiences.
-              </p>
-            </div>
-            
-            <div className="bg-dark-card border border-dark-border rounded-xl p-8 text-center">
-              <div className="bg-primary-600/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-dark-card border border-dark-border rounded-2xl p-10 text-center hover:border-primary-500 transition-all group">
+              <div className="bg-primary-500/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                <svg className="w-10 h-10 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Excellence</h3>
-              <p className="text-dark-muted">
-                We strive for excellence in everything we do, from code quality to customer support to product design.
+              <h3 className="text-2xl font-black text-white mb-4">Ship Fast</h3>
+              <p className="text-gray-400 text-lg">
+                We don&apos;t wait for perfect. We ship, learn, and iterate. 
+                <span className="text-white font-semibold"> Speed wins.</span>
+              </p>
+            </div>
+            
+            <div className="bg-dark-card border border-dark-border rounded-2xl p-10 text-center hover:border-accent-500 transition-all group">
+              <div className="bg-accent-500/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                <svg className="w-10 h-10 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-4">Build Better</h3>
+              <p className="text-gray-400 text-lg">
+                Quality isn&apos;t optional. We build products we&apos;d actually want to use. 
+                <span className="text-white font-semibold"> No compromises.</span>
+              </p>
+            </div>
+            
+            <div className="bg-dark-card border border-dark-border rounded-2xl p-10 text-center hover:border-primary-500 transition-all group">
+              <div className="bg-primary-500/20 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 transform group-hover:rotate-12 transition-transform">
+                <svg className="w-10 h-10 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-black text-white mb-4">Stay Real</h3>
+              <p className="text-gray-400 text-lg">
+                No corporate speak. No fake promises. Just honest products that solve real problems. 
+                <span className="text-white font-semibold"> That&apos;s it.</span>
               </p>
             </div>
           </div>
@@ -189,22 +231,28 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-4xl font-bold mb-4">Join Us on Our Journey</h3>
-          <p className="text-xl mb-8 text-primary-100">Be part of the golf technology revolution</p>
-          <div className="flex justify-center space-x-4 flex-wrap gap-4">
+      <section className="relative py-32 bg-gradient-to-br from-primary-600 via-accent-600 to-primary-700 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-6xl md:text-7xl font-black mb-6 text-white">
+            Let&apos;s Build Something
+          </h2>
+          <p className="text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
+            Ready to see what we&apos;re building? 
+            <span className="font-bold"> Let&apos;s talk.</span>
+          </p>
+          <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Link
               href="/contact"
-              className="bg-white text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-all transform hover:scale-105 shadow-lg"
+              className="group px-10 py-5 bg-white text-primary-700 rounded-full text-lg font-black hover:shadow-2xl transition-all transform hover:scale-105"
             >
               Get in Touch
             </Link>
             <Link
               href="/products"
-              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all"
+              className="px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full text-lg font-bold hover:bg-white/20 transition-all transform hover:scale-105"
             >
-              Explore Products
+              See Products
             </Link>
           </div>
         </div>
@@ -213,40 +261,39 @@ export default function About() {
       {/* Footer */}
       <footer className="bg-dark-bg border-t border-dark-border py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="text-xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">GMG Technology</h4>
-              <p className="text-dark-muted">Revolutionizing golf through innovative technology solutions.</p>
+              <h4 className="text-2xl font-black mb-4 bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">GMG TECH</h4>
+              <p className="text-gray-500 text-sm">Building golf tech that doesn&apos;t suck.</p>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-white">Company</h5>
-              <ul className="space-y-2 text-dark-muted">
+              <h5 className="font-bold mb-4 text-white">Company</h5>
+              <ul className="space-y-2 text-gray-500">
                 <li><Link href="/about" className="hover:text-primary-400 transition-colors">About</Link></li>
                 <li><Link href="/products" className="hover:text-primary-400 transition-colors">Products</Link></li>
                 <li><Link href="/contact" className="hover:text-primary-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-white">Products</h5>
-              <ul className="space-y-2 text-dark-muted">
+              <h5 className="font-bold mb-4 text-white">Products</h5>
+              <ul className="space-y-2 text-gray-500">
                 <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Weekend Warrior</span></li>
                 <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Club Pro GMS</span></li>
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-white">Legal</h5>
-              <ul className="space-y-2 text-dark-muted">
-                <li><Link href="/privacy" className="hover:text-primary-400 transition-colors">Privacy Policy</Link></li>
-                <li><Link href="/terms" className="hover:text-primary-400 transition-colors">Terms of Service</Link></li>
+              <h5 className="font-bold mb-4 text-white">Legal</h5>
+              <ul className="space-y-2 text-gray-500">
+                <li><Link href="/privacy" className="hover:text-primary-400 transition-colors">Privacy</Link></li>
+                <li><Link href="/terms" className="hover:text-primary-400 transition-colors">Terms</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-dark-border mt-8 pt-8 text-center text-dark-muted">
-            <p>&copy; {new Date().getFullYear()} GMG Technology. All rights reserved.</p>
+          <div className="border-t border-dark-border pt-8 text-center text-gray-500 text-sm">
+            <p>&copy; {new Date().getFullYear()} GMG Technology. Built with ❤️ and way too much coffee.</p>
           </div>
         </div>
       </footer>
-    </main>
+    </div>
   )
 }
-
