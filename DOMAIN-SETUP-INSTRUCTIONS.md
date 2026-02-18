@@ -103,3 +103,4 @@ Both should work and automatically redirect to HTTPS!
 
 **Need help?** Check the detailed guide in `GODADDY-DNS-SETUP.md`
 
+

@@ -42,3 +42,4 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "3. You're authenticated with GitHub (may need to enter credentials)" -ForegroundColor Red
 }
 
+
