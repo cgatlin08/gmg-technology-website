@@ -141,7 +141,7 @@ export default function Home() {
             <div className="group relative bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/20">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4">
                 <div className="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center mr-4 transform group-hover:rotate-12 transition-transform">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -149,34 +149,63 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-3xl font-black text-white mb-1">Weekend Warrior</h3>
-                  <p className="text-primary-400 font-bold">For Players</p>
+                  <p className="text-primary-400 font-bold">Golf SaaS Platform • B2C</p>
                 </div>
+              </div>
+
+              {/* Platform badges */}
+              <div className="flex gap-2 mb-6">
+                <span className="px-3 py-1 bg-dark-bg border border-dark-border rounded-full text-xs font-bold text-gray-300">🌐 Web Platform</span>
+                <span className="px-3 py-1 bg-dark-bg border border-dark-border rounded-full text-xs font-bold text-gray-300">📱 iOS</span>
+                <span className="px-3 py-1 bg-dark-bg border border-dark-border rounded-full text-xs font-bold text-gray-300">🤖 Android</span>
               </div>
               
               <p className="text-gray-400 mb-6 text-lg leading-relaxed">
-                The most comprehensive golf game management platform on iOS & Android. Track scores, manage leagues, and run competitive formats — 
-                <span className="text-white font-semibold"> all in real-time.</span>
+                A full-stack SaaS platform for competitive golfers. The web dashboard is your game command center — manage groups, leagues, and tournaments. The iOS & Android apps bring it all 
+                <span className="text-white font-semibold"> on-course in real-time.</span>
               </p>
-              
-              <div className="space-y-3 mb-8">
-                {[
-                  '8+ Competitive Formats (Wolf, Skins, Chicago & more)',
-                  'On-Course Scoring & GPS Distance Tracking',
-                  'League Management & Tournament Organization',
-                  'SMS Invites, Live Leaderboards & Analytics'
-                ].map((feature, i) => (
-                  <div key={i} className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                    <span className="font-medium">{feature}</span>
-                  </div>
-                ))}
+
+              <div className="mb-6">
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Web Platform</p>
+                <div className="space-y-2">
+                  {[
+                    'Game organizer dashboard & advanced analytics',
+                    'League management with season-long standings',
+                    'Full tournament organization & team formation',
+                    'Handicap tracking & player profile management',
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-center text-gray-300">
+                      <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
+                      <span className="font-medium text-sm">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Mobile App (iOS & Android)</p>
+                <div className="space-y-2">
+                  {[
+                    '8+ Game Formats — Wolf, Skins, Chicago, Best Ball & more',
+                    'Live hole-by-hole scoring & real-time leaderboards',
+                    'GPS distance tracking & on-course stats',
+                    'SMS invites & push notifications',
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-center text-gray-300">
+                      <div className="w-2 h-2 bg-primary-400 rounded-full mr-3 flex-shrink-0"></div>
+                      <span className="font-medium text-sm">{feature}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
               
               <div className="flex items-center justify-between">
                 <div className="px-4 py-2 bg-primary-500/20 rounded-full">
-                  <span className="text-primary-400 font-bold text-sm">B2C • iOS & Android</span>
+                  <span className="text-primary-400 font-bold text-sm">$39.99 / year</span>
                 </div>
-                <div className="text-2xl">🏌️</div>
+                <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
+                  weekendwarriorgolf.com →
+                </a>
               </div>
             </div>
 
