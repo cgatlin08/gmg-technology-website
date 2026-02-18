@@ -10,9 +10,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-black bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
-                GMG TECH
-              </h1>
+              <Link href="/">
+                <img
+                  src="/logo.png"
+                  alt="GMG Technology"
+                  className="h-10 w-auto"
+                  style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                />
+              </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
@@ -25,7 +30,7 @@ export default function Home() {
                 <Link href="/products" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
                   Products
                 </Link>
-                <Link href="/contact" className="bg-gradient-to-r from-primary-500 to-accent-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary-500/50 transition-all transform hover:scale-105">
+                <Link href="/contact" className="bg-primary-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/50 transition-all transform hover:scale-105">
                   Get Started
                 </Link>
               </div>
@@ -38,14 +43,23 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.1),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.1),transparent_50%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.08),transparent_50%)]"></div>
         </div>
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          {/* Logo Hero */}
+          <div className="flex justify-center mb-10">
+            <img
+              src="/logo.png"
+              alt="GMG Technology"
+              className="h-40 md:h-52 w-auto"
+              style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+            />
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-dark-card border border-dark-border mb-8 animate-float">
             <span className="relative flex h-3 w-3">
@@ -56,11 +70,11 @@ export default function Home() {
           </div>
 
           <h1 className="text-7xl md:text-9xl font-black mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-white via-primary-300 to-accent-400 bg-clip-text text-transparent">
+            <span className="text-white">
               Golf. But
             </span>
             <br />
-            <span className="bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 bg-clip-text text-transparent">
+            <span className="text-primary-400">
               Actually Good.
             </span>
           </h1>
@@ -73,10 +87,9 @@ export default function Home() {
           <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Link
               href="/products"
-              className="group relative px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full text-lg font-bold hover:shadow-2xl hover:shadow-primary-500/50 transition-all transform hover:scale-105"
+              className="group relative px-8 py-4 bg-primary-500 rounded-full text-lg font-bold hover:bg-primary-400 hover:shadow-2xl hover:shadow-primary-500/50 transition-all transform hover:scale-105"
             >
               <span className="relative z-10">Check Our Products</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </Link>
             <Link
               href="/about"
@@ -89,15 +102,15 @@ export default function Home() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-black bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent mb-2">2</div>
+              <div className="text-4xl font-black text-primary-400 mb-2">2</div>
               <div className="text-sm text-gray-400 font-semibold">PRODUCTS</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent mb-2">&infin;</div>
+              <div className="text-4xl font-black text-primary-400 mb-2">&infin;</div>
               <div className="text-sm text-gray-400 font-semibold">POTENTIAL</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent mb-2">100%</div>
+              <div className="text-4xl font-black text-primary-400 mb-2">100%</div>
               <div className="text-sm text-gray-400 font-semibold">BUILT DIFFERENT</div>
             </div>
           </div>
@@ -113,11 +126,11 @@ export default function Home() {
               <span className="text-primary-400 font-bold text-sm">WHAT WE BUILD</span>
             </div>
             <h2 className="text-6xl md:text-7xl font-black mb-6">
-              <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 Two Products.
               </span>
               <br />
-              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+              <span className="text-primary-400">
                 One Mission.
               </span>
             </h2>
@@ -129,7 +142,7 @@ export default function Home() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl flex items-center justify-center mr-4 transform group-hover:rotate-12 transition-transform">
+                <div className="w-16 h-16 bg-primary-500 rounded-xl flex items-center justify-center mr-4 transform group-hover:rotate-12 transition-transform">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
@@ -168,18 +181,18 @@ export default function Home() {
             </div>
 
             {/* Club Pro GMS */}
-            <div className="group relative bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-accent-500 transition-all duration-300 hover:shadow-2xl hover:shadow-accent-500/20">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/20">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-500/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
               
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-primary-500 rounded-xl flex items-center justify-center mr-4 transform group-hover:rotate-12 transition-transform">
+                <div className="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mr-4 transform group-hover:rotate-12 transition-transform">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
                 <div>
                   <h3 className="text-3xl font-black text-white mb-1">Club Pro GMS</h3>
-                  <p className="text-accent-400 font-bold">For Courses</p>
+                  <p className="text-primary-400 font-bold">For Courses</p>
                 </div>
               </div>
               
@@ -196,15 +209,15 @@ export default function Home() {
                   'Member Management & Analytics'
                 ].map((feature, i) => (
                   <div key={i} className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
                     <span className="font-medium">{feature}</span>
                   </div>
                 ))}
               </div>
               
               <div className="flex items-center justify-between">
-                <div className="px-4 py-2 bg-accent-500/20 rounded-full">
-                  <span className="text-accent-400 font-bold text-sm">B2B SaaS • Web Platform</span>
+                <div className="px-4 py-2 bg-primary-500/20 rounded-full">
+                  <span className="text-primary-400 font-bold text-sm">B2B SaaS • Web Platform</span>
                 </div>
                 <div className="text-2xl">⛳</div>
               </div>
@@ -222,11 +235,11 @@ export default function Home() {
               <span className="text-primary-400 font-bold text-sm">THE FOUNDERS</span>
             </div>
             <h2 className="text-6xl md:text-7xl font-black mb-6">
-              <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 Built by Golfers.
               </span>
               <br />
-              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+              <span className="text-primary-400">
                 For Golfers.
               </span>
             </h2>
@@ -237,10 +250,10 @@ export default function Home() {
             <div className="group bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-primary-500 transition-all hover:shadow-2xl hover:shadow-primary-500/20">
               <div className="flex flex-col items-center mb-6">
                 <div className="relative mb-4">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary-500 to-accent-500 rounded-2xl flex items-center justify-center text-3xl font-black text-white transform group-hover:scale-110 transition-transform">
+                  <div className="w-24 h-24 bg-primary-500 rounded-2xl flex items-center justify-center text-3xl font-black text-white transform group-hover:scale-110 transition-transform">
                     CG
                   </div>
-                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary-500 rounded-full border-4 border-dark-card animate-pulse"></div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary-400 rounded-full border-4 border-dark-card animate-pulse"></div>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-2">Chris Gatlin</h3>
                 <p className="text-primary-400 font-bold text-lg">Founder & CEO</p>
@@ -252,16 +265,16 @@ export default function Home() {
             </div>
 
             {/* Taylor Mobley */}
-            <div className="group bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-accent-500 transition-all hover:shadow-2xl hover:shadow-accent-500/20">
+            <div className="group bg-dark-card border border-dark-border rounded-2xl p-10 hover:border-primary-500 transition-all hover:shadow-2xl hover:shadow-primary-500/20">
               <div className="flex flex-col items-center mb-6">
                 <div className="relative mb-4">
-                  <div className="w-24 h-24 bg-gradient-to-br from-accent-500 to-primary-500 rounded-2xl flex items-center justify-center text-3xl font-black text-white transform group-hover:scale-110 transition-transform">
+                  <div className="w-24 h-24 bg-primary-600 rounded-2xl flex items-center justify-center text-3xl font-black text-white transform group-hover:scale-110 transition-transform">
                     TM
                   </div>
-                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-accent-500 rounded-full border-4 border-dark-card animate-pulse"></div>
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary-400 rounded-full border-4 border-dark-card animate-pulse"></div>
                 </div>
                 <h3 className="text-3xl font-black text-white mb-2">Taylor Mobley</h3>
-                <p className="text-accent-400 font-bold text-lg">Co-Founder</p>
+                <p className="text-primary-400 font-bold text-lg">Co-Founder</p>
               </div>
               <p className="text-gray-400 text-center leading-relaxed">
                 The strategic mind. System architect, UX wizard, and the one who makes sure we don&apos;t build garbage. 
@@ -273,27 +286,26 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 bg-gradient-to-br from-primary-600 via-accent-600 to-primary-700 overflow-hidden">
-        <div className={`absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20`}></div>
+      <section className="relative py-32 bg-dark-surface border-t border-primary-500/30 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.08),transparent_60%)]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-6xl md:text-7xl font-black mb-6 text-white">
             Ready to Level Up?
           </h2>
-          <p className="text-2xl mb-12 text-white/90 max-w-2xl mx-auto">
+          <p className="text-2xl mb-12 text-gray-400 max-w-2xl mx-auto">
             Join the golfers and courses already using our platforms. 
-            <span className="font-bold"> No credit card required to start.</span>
+            <span className="text-primary-400 font-bold"> No credit card required to start.</span>
           </p>
           <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Link
               href="/contact"
-              className="group px-10 py-5 bg-white text-primary-700 rounded-full text-lg font-black hover:shadow-2xl transition-all transform hover:scale-105"
+              className="px-10 py-5 bg-primary-500 text-white rounded-full text-lg font-black hover:bg-primary-400 hover:shadow-2xl hover:shadow-primary-500/50 transition-all transform hover:scale-105"
             >
-              <span className="relative z-10">Get Started Now</span>
-              <div className="absolute inset-0 bg-gray-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              Get Started Now
             </Link>
             <Link
               href="/products"
-              className="px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full text-lg font-bold hover:bg-white/20 transition-all transform hover:scale-105"
+              className="px-10 py-5 bg-dark-card border-2 border-dark-border text-white rounded-full text-lg font-bold hover:border-primary-500 transition-all transform hover:scale-105"
             >
               See How It Works
             </Link>
@@ -306,7 +318,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="text-2xl font-black mb-4 bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">GMG TECH</h4>
+              <img
+                src="/logo.png"
+                alt="GMG Technology"
+                className="h-16 w-auto mb-3"
+                style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+              />
               <p className="text-gray-500 text-sm">Building golf tech that doesn&apos;t suck.</p>
             </div>
             <div>
