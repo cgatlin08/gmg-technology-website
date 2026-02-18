@@ -12,10 +12,10 @@ export default function Home() {
             <div className="flex-shrink-0">
               <Link href="/">
                 <img
-                  src="/logo.png"
+                  src="/GMG-TechnologyLogo.png"
                   alt="GMG Technology"
-                  className="h-10 w-auto"
-                  style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                  className="h-12 w-auto"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </Link>
             </div>
@@ -53,10 +53,10 @@ export default function Home() {
           {/* Logo Hero */}
           <div className="flex justify-center mb-10">
             <img
-              src="/logo.png"
+              src="/GMG-TechnologyLogo.png"
               alt="GMG Technology"
-              className="h-40 md:h-52 w-auto"
-              style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+              className="h-52 md:h-72 w-auto"
+              style={{ filter: 'brightness(0) invert(1)' }}
             />
           </div>
 
@@ -319,10 +319,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <img
-                src="/logo.png"
+                src="/GMG-TechnologyLogo.png"
                 alt="GMG Technology"
-                className="h-16 w-auto mb-3"
-                style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                className="h-20 w-auto mb-3"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
               <p className="text-gray-500 text-sm">Building golf tech that doesn&apos;t suck.</p>
             </div>

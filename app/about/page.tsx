@@ -9,10 +9,10 @@ export default function About() {
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex-shrink-0">
               <img
-                src="/logo.png"
+                src="/GMG-TechnologyLogo.png"
                 alt="GMG Technology"
-                className="h-10 w-auto"
-                style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                className="h-12 w-auto"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <div className="hidden md:block">
@@ -267,10 +267,10 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <img
-                src="/logo.png"
+                src="/GMG-TechnologyLogo.png"
                 alt="GMG Technology"
-                className="h-16 w-auto mb-3"
-                style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
+                className="h-20 w-auto mb-3"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
               <p className="text-gray-500 text-sm">Building golf tech that doesn&apos;t suck.</p>
             </div>
