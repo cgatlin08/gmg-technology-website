@@ -154,16 +154,16 @@ export default function Home() {
               </div>
               
               <p className="text-gray-400 mb-6 text-lg leading-relaxed">
-                The golf app that actually gets it. Score rounds, run money games, manage tournaments. 
-                <span className="text-white font-semibold"> No compromises.</span>
+                The most comprehensive golf game management platform on iOS & Android. Track scores, manage leagues, and run competitive formats — 
+                <span className="text-white font-semibold"> all in real-time.</span>
               </p>
               
               <div className="space-y-3 mb-8">
                 {[
-                  '8+ Game Formats (Wolf, Skins, Chicago, etc.)',
-                  'Advanced Betting & Auto-Payouts',
-                  'League Management & Tournaments',
-                  'SMS Invites & Live Leaderboards'
+                  '8+ Competitive Formats (Wolf, Skins, Chicago & more)',
+                  'On-Course Scoring & GPS Distance Tracking',
+                  'League Management & Tournament Organization',
+                  'SMS Invites, Live Leaderboards & Analytics'
                 ].map((feature, i) => (
                   <div key={i} className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
