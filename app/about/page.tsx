@@ -165,8 +165,7 @@ export default function About() {
                   needs to scale, Taylor&apos;s the one who makes it happen. <span className="text-accent-400">Without breaking things.</span>
                 </p>
                 <p>
-                  Taylor worked in the golf business for several years before co-founding GMG Technology and is a 
-                  <span className="text-white font-semibold"> graduate of Baylor University</span>.
+                  A <span className="text-white font-semibold">Baylor University</span> graduate, Taylor spent several years in the golf business before co-founding GMG Technology.
                 </p>
                 <div className="pt-4 border-t border-dark-border">
                   <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>

@@ -309,7 +309,7 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-center leading-relaxed">
                 The strategic mind. System architect, UX wizard, and the one who makes sure we don&apos;t build garbage. 
-                Worked in the golf business for several years; <span className="text-white font-semibold">Baylor University</span> graduate. 
+                Baylor grad; spent several years in the golf business before GMG. 
                 <span className="text-white font-semibold"> Scales right. Thinks bigger.</span>
               </p>
             </div>
