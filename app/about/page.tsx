@@ -74,7 +74,7 @@ export default function About() {
               <p>
                 <strong className="text-white">Weekend Warrior</strong> started because we were tired of using garbage apps 
                 that couldn&apos;t handle a simple Wolf game. So we built our own. Now it&apos;s the most comprehensive golf 
-                game management platform out there. <span className="text-primary-400 font-semibold">8+ game formats. Advanced betting. 
+                game management platform out there. <span className="text-primary-400 font-semibold">8+ game formats. Advanced calculations. 
                 Real-time leaderboards. It just works.</span>
               </p>
               <p>

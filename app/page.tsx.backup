@@ -146,7 +146,7 @@ export default function Home() {
               <div className="space-y-3 mb-8">
                 {[
                   '8+ Game Formats (Wolf, Skins, Chicago, etc.)',
-                  'Advanced Betting & Auto-Payouts',
+                  'Advanced Calculations & Auto-Payouts',
                   'League Management & Tournaments',
                   'SMS Invites & Live Leaderboards'
                 ].map((feature, i) => (
