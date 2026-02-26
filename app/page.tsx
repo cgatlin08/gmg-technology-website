@@ -290,6 +290,7 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-center leading-relaxed">
                 The guy who actually codes. Full-stack wizard, product strategist, and the reason this company exists. 
+                Former high school and college golfer; <span className="text-white font-semibold">Southeastern Oklahoma State University</span> grad (BS, Computer Information Systems). 
                 <span className="text-white font-semibold"> Ships fast. Builds better.</span>
               </p>
             </div>
@@ -308,6 +309,7 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-center leading-relaxed">
                 The strategic mind. System architect, UX wizard, and the one who makes sure we don&apos;t build garbage. 
+                Worked in the golf business for several years; <span className="text-white font-semibold">Baylor University</span> graduate. 
                 <span className="text-white font-semibold"> Scales right. Thinks bigger.</span>
               </p>
             </div>

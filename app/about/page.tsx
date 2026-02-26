@@ -132,6 +132,10 @@ export default function About() {
                   Chris leads the technical direction of both Weekend Warrior and Club Pro GMS. When he&apos;s not coding, 
                   he&apos;s probably on the course testing new features. <span className="text-primary-400">Or thinking about them.</span>
                 </p>
+                <p>
+                  A former high school and college golfer, Chris brings a player&apos;s perspective to every product. He graduated from 
+                  <span className="text-white font-semibold"> Southeastern Oklahoma State University</span> with a <span className="text-white font-semibold">BS in Computer Information Systems</span>.
+                </p>
                 <div className="pt-4 border-t border-dark-border">
                   <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>
                   <p className="text-gray-300">Built the first Weekend Warrior prototype in 3 weeks. Still runs on that code.</p>
@@ -159,6 +163,10 @@ export default function About() {
                 <p>
                   Taylor brings the vision and execution that turns good ideas into great products. When the architecture 
                   needs to scale, Taylor&apos;s the one who makes it happen. <span className="text-accent-400">Without breaking things.</span>
+                </p>
+                <p>
+                  Taylor worked in the golf business for several years before co-founding GMG Technology and is a 
+                  <span className="text-white font-semibold"> graduate of Baylor University</span>.
                 </p>
                 <div className="pt-4 border-t border-dark-border">
                   <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>

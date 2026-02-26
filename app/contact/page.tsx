@@ -49,13 +49,13 @@ export default function Contact() {
               Reach out via email for product demos, pricing, or partnerships.
             </p>
             <a
-              href="mailto:hello@gmgtechnology.com"
+              href="mailto:chris@gmgtechllc.com"
               className="inline-flex items-center px-6 py-4 bg-primary-500 text-white rounded-full font-bold hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/50 transition-all"
             >
-              hello@gmgtechnology.com
+              chris@gmgtechllc.com
             </a>
             <p className="text-gray-500 text-sm mt-6">
-              We typically respond within 1–2 business days.
+              We typically respond within 1 to 2 hours.
             </p>
           </div>
         </div>
