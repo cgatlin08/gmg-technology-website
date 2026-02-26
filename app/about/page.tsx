@@ -79,8 +79,8 @@ export default function About() {
               </p>
               <p>
                 Then courses started asking us for help. They were paying $500/month for software that looked like it was 
-                built in 2005. So we built <strong className="text-white">Club Pro GMS</strong> — a modern operations platform with 
-                <strong className="text-white">Assistant Pro</strong>, your AI assistant that answers the phone and books tee times. <span className="text-accent-400 font-semibold">Voice booking and SMS confirmations. Yeah, we did that.</span>
+                built in 2005. So we built <strong className="text-white">Club Pro GMS</strong> — a modern operations platform. 
+                <strong className="text-white">Assistant Pro</strong> is your AI assistant that answers the phone and books tee times. <span className="text-accent-400 font-semibold">Voice booking and SMS confirmations. Yeah, we did that.</span>
               </p>
               <p>
                 We&apos;re not here to be another golf tech company. We&apos;re here to be <span className="text-white font-bold">the</span> golf tech company. 
