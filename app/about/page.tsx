@@ -79,9 +79,8 @@ export default function About() {
               </p>
               <p>
                 Then courses started asking us for help. They were paying $500/month for software that looked like it was 
-                built in 2005. So we built <strong className="text-white">Club Pro GMS</strong> - a modern platform with 
-                AI features that actually make sense. <span className="text-accent-400 font-semibold">Voice-activated booking? 
-                Yeah, we did that.</span>
+                built in 2005. So we built <strong className="text-white">Club Pro GMS</strong> — a modern operations platform with 
+                <strong className="text-white">Assistant Pro</strong>, your AI assistant that answers the phone and books tee times. <span className="text-accent-400 font-semibold">Voice booking and SMS confirmations. Yeah, we did that.</span>
               </p>
               <p>
                 We&apos;re not here to be another golf tech company. We&apos;re here to be <span className="text-white font-bold">the</span> golf tech company. 
@@ -285,8 +284,8 @@ export default function About() {
             <div>
               <h5 className="font-bold mb-4 text-white">Products</h5>
               <ul className="space-y-2 text-gray-500">
-                <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Weekend Warrior</span></li>
-                <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Club Pro GMS</span></li>
+                <li><a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Weekend Warrior</a></li>
+                <li><a href="https://clubprogms.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Club Pro GMS</a></li>
               </ul>
             </div>
             <div>

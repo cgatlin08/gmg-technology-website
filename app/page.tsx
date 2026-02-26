@@ -201,7 +201,7 @@ export default function Home() {
               
               <div className="flex items-center justify-between">
                 <div className="px-4 py-2 bg-primary-500/20 rounded-full">
-                  <span className="text-primary-400 font-bold text-sm">$39.99 / year</span>
+                  <span className="text-primary-400 font-bold text-sm">$59.99 / $24.99 per year</span>
                 </div>
                 <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
                   weekendwarriorgolf.com →
@@ -226,15 +226,14 @@ export default function Home() {
               </div>
               
               <p className="text-gray-400 mb-6 text-lg leading-relaxed">
-                The management system golf courses have been waiting for. 
-                <span className="text-white font-semibold"> AI-powered. Modern. Actually works.</span>
+                The operations platform golf courses have been waiting for. Tee sheet, members, pricing, and tournaments — plus <span className="text-white font-semibold">Assistant Pro</span>, your AI assistant that answers the phone and books tee times 24/7. <span className="text-white font-semibold">Modern. Actually works.</span>
               </p>
               
               <div className="space-y-3 mb-8">
                 {[
-                  'Advanced Tee Book Management',
-                  'AI Phone Booking Assistant',
-                  'Tournament Management System',
+                  'Assistant Pro — voice booking & SMS confirmations',
+                  'Advanced Tee Book & block times',
+                  'Tournament Management (Weekend Warrior integration)',
                   'Member Management & Analytics'
                 ].map((feature, i) => (
                   <div key={i} className="flex items-center text-gray-300">
@@ -248,7 +247,9 @@ export default function Home() {
                 <div className="px-4 py-2 bg-primary-500/20 rounded-full">
                   <span className="text-primary-400 font-bold text-sm">B2B SaaS • Web Platform</span>
                 </div>
-                <div className="text-2xl">⛳</div>
+                <Link href="/contact" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
+                  Get in touch →
+                </Link>
               </div>
             </div>
           </div>
@@ -366,8 +367,8 @@ export default function Home() {
             <div>
               <h5 className="font-bold mb-4 text-white">Products</h5>
               <ul className="space-y-2 text-gray-500">
-                <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Weekend Warrior</span></li>
-                <li><span className="hover:text-primary-400 transition-colors cursor-pointer">Club Pro GMS</span></li>
+                <li><a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Weekend Warrior</a></li>
+                <li><a href="https://clubprogms.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Club Pro GMS</a></li>
               </ul>
             </div>
             <div>
