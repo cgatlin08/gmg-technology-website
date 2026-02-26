@@ -40,7 +40,7 @@ export default function Contact() {
               Let&apos;s talk.
             </h1>
             <p className="text-xl text-gray-400">
-              Interested in <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 font-semibold">Weekend Warrior</a> or <a href="https://clubprogms.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 font-semibold">Club Pro GMS</a>? We&apos;d love to hear from you.
+              Interested in <Link href="/products" className="text-primary-400 hover:text-primary-300 font-semibold">Weekend Warrior</Link> or <Link href="/products" className="text-primary-400 hover:text-primary-300 font-semibold">Club Pro GMS</Link>? We&apos;d love to hear from you.
             </p>
           </div>
 

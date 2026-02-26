@@ -247,9 +247,9 @@ export default function Home() {
                 <div className="px-4 py-2 bg-primary-500/20 rounded-full">
                   <span className="text-primary-400 font-bold text-sm">B2B SaaS • Web Platform</span>
                 </div>
-                <a href="https://clubprogms.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
-                  clubprogms.com →
-                </a>
+                <Link href="/contact" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
+                  Get in touch →
+                </Link>
               </div>
             </div>
           </div>
