@@ -173,6 +173,17 @@ export default function About() {
                 </div>
               </div>
             </div>
+
+          {/* Founders photo - Taylor (left), Chris (right) */}
+          <div className="max-w-4xl mx-auto mt-16">
+            <div className="aspect-[2/1] w-full overflow-hidden rounded-2xl border border-dark-border">
+              <img
+                src="/founders.png"
+                alt="Taylor Mobley (left) and Chris Gatlin (right), founders of GMG Technology"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <p className="text-center text-gray-500 text-sm mt-3">Taylor (left) and Chris (right)</p>
           </div>
         </div>
       </section>
