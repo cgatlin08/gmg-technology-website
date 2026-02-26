@@ -173,6 +173,7 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
 
           {/* Founders photo - Taylor (left), Chris (right) */}
           <div className="max-w-4xl mx-auto mt-16">
