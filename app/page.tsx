@@ -309,7 +309,7 @@ export default function Home() {
               </div>
               <p className="text-gray-400 text-center leading-relaxed">
                 The strategic mind. System architect, UX wizard, and the one who makes sure we don&apos;t build garbage. 
-                Baylor grad; spent several years in the golf business before GMG. 
+                <span className="text-white font-semibold">Baylor University</span> graduate; worked in the golf business at <span className="text-white font-semibold">Barton Creek Resort &amp; Spa</span>, <span className="text-white font-semibold">The Country Club of Arkansas</span>, and <span className="text-white font-semibold">Tanglewood Resort</span>. 
                 <span className="text-white font-semibold"> Scales right. Thinks bigger.</span>
               </p>
             </div>
