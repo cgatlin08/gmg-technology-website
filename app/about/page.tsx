@@ -141,7 +141,7 @@ export default function About() {
                 </p>
                 <div className="pt-4 border-t border-dark-border">
                   <p className="text-sm text-gray-500 font-semibold">FUN FACT:</p>
-                  <p className="text-gray-300">Built the first Weekend Warrior prototype in 3 weeks. Still runs on that code.</p>
+                  <p className="text-gray-300">Built the first Weekend Warrior prototype in 3 weeks. Still runs on that code. Uses AI across the full stack—architecture, infra, database, app, and process. Products are the passion; the methodology is the soul. Still waiting on AI to fix his putting.</p>
                 </div>
               </div>
             </div>
