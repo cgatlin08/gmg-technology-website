@@ -220,8 +220,8 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-black text-white mb-4">Ship Fast</h3>
               <p className="text-gray-400 text-lg">
-                We don&apos;t wait for perfect. We ship, learn, and iterate. 
-                <span className="text-white font-semibold"> Speed wins.</span>
+                Real products, real users, real feedback—then we make it better. 
+                <span className="text-white font-semibold"> No endless planning.</span>
               </p>
             </div>
             
