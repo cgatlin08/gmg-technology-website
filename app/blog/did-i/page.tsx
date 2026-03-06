@@ -188,6 +188,18 @@ export default function KilledTheAppStorePost() {
             </p>
 
             <h2>What changed</h2>
+
+            <div className="rounded-xl overflow-hidden border border-dark-border my-6">
+              <img
+                src="/vercel-vs-appstore.png"
+                alt="Left: Vercel deployments showing Ready in 55 seconds. Right: App Store Connect showing Waiting for Review."
+                className="w-full"
+              />
+              <p className="text-xs text-gray-500 px-4 py-2 bg-dark-card">
+                Left: Vercel deploys in under a minute. Right: Apple&apos;s App Store — still waiting.
+              </p>
+            </div>
+
             <p>
               Before, my deployment pipeline looked like this:
             </p>
