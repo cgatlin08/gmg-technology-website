@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'i-just-killed-the-app-store',
+    title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
+    description:
+      'I was up late thinking about why I was waiting weeks for Apple to approve bug fixes. By morning, I had moved my entire mobile experience to the browser. Here\'s what happened.',
+    date: '2026-03-06',
+  },
+  {
     slug: 'ai-full-stack-methodology',
     title: 'AI Full-Stack: One Engineer, AI in Every Phase',
     description:
