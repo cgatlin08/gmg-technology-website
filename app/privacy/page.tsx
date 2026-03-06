@@ -14,6 +14,7 @@ export default function Privacy() {
                 <Link href="/" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all">Home</Link>
                 <Link href="/about" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all">About</Link>
                 <Link href="/products" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all">Products</Link>
+                <Link href="/blog" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all">Blog</Link>
                 <Link href="/contact" className="bg-primary-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary-400 transition-all">Get Started</Link>
               </div>
             </div>
@@ -76,6 +77,7 @@ export default function Privacy() {
               <ul className="space-y-2 text-gray-500">
                 <li><Link href="/about" className="hover:text-primary-400 transition-colors">About</Link></li>
                 <li><Link href="/products" className="hover:text-primary-400 transition-colors">Products</Link></li>
+                <li><Link href="/blog" className="hover:text-primary-400 transition-colors">Blog</Link></li>
                 <li><Link href="/contact" className="hover:text-primary-400 transition-colors">Contact</Link></li>
               </ul>
             </div>

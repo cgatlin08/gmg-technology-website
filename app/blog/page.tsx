@@ -1,6 +1,29 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export default function Contact() {
+export const metadata: Metadata = {
+  title: 'Blog',
+  description:
+    'GMG Technology blog — AI full-stack methodology, how we build, and what we ship.',
+}
+
+const posts = [
+  {
+    slug: 'ai-full-stack-methodology',
+    title: 'AI Full-Stack: One Engineer, AI in Every Phase',
+    description:
+      'Using AI across the entire process—architecture, infrastructure, database, application, product, and methodology—not just for writing code.',
+    date: '2026-03-05',
+  },
+] as const
+
+export default function BlogPage() {
+  const dateFormat = new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  })
+
   return (
     <div className="min-h-screen bg-dark-bg text-white">
       {/* Navigation */}
@@ -20,7 +43,7 @@ export default function Contact() {
                 <Link href="/" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">Home</Link>
                 <Link href="/about" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">About</Link>
                 <Link href="/products" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">Products</Link>
-                <Link href="/blog" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">Blog</Link>
+                <Link href="/blog" className="text-white hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">Blog</Link>
                 <Link href="/contact" className="bg-primary-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/50 transition-all transform hover:scale-105">Get Started</Link>
               </div>
             </div>
@@ -32,33 +55,28 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,197,94,0.08),transparent_50%)]"></div>
         </div>
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-primary-500/20 rounded-full mb-6">
-              <span className="text-primary-400 font-bold text-sm">GET IN TOUCH</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-black mb-4 text-white">
-              Let&apos;s talk.
-            </h1>
-            <p className="text-xl text-gray-400">
-              Interested in <Link href="/products" className="text-primary-400 hover:text-primary-300 font-semibold">Weekend Warrior</Link> or <Link href="/products" className="text-primary-400 hover:text-primary-300 font-semibold">Club Pro GMS</Link>? We&apos;d love to hear from you.
-            </p>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="inline-block px-4 py-2 bg-primary-500/20 rounded-full mb-6">
+            <span className="text-primary-400 font-bold text-sm">BLOG</span>
           </div>
-
-          <div className="bg-dark-card border border-dark-border rounded-2xl p-10">
-            <p className="text-gray-400 mb-6">
-              Reach out via email for product demos, pricing, or partnerships.
-            </p>
-            <a
-              href="mailto:chris@gmgtechllc.com"
-              className="inline-flex items-center px-6 py-4 bg-primary-500 text-white rounded-full font-bold hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/50 transition-all"
-            >
-              chris@gmgtechllc.com
-            </a>
-            <p className="text-gray-500 text-sm mt-6">
-              We typically respond within 1 to 2 hours.
-            </p>
-          </div>
+          <h1 className="text-5xl md:text-6xl font-black mb-4 text-white">Blog</h1>
+          <p className="text-xl text-gray-400 mb-12">
+            Methodology, engineering, and how we build with AI across the full stack.
+          </p>
+          <ul className="space-y-6">
+            {posts.map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="block p-6 rounded-2xl bg-dark-card border border-dark-border hover:border-primary-500 transition-colors"
+                >
+                  <time className="text-sm text-gray-500">{dateFormat.format(new Date(post.date))}</time>
+                  <h2 className="text-2xl font-black text-white mt-2">{post.title}</h2>
+                  <p className="text-gray-400 mt-2">{post.description}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

@@ -30,6 +30,9 @@ export default function Home() {
                 <Link href="/products" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
                   Products
                 </Link>
+                <Link href="/blog" className="text-gray-400 hover:text-primary-400 px-3 py-2 text-sm font-semibold transition-all hover:scale-105">
+                  Blog
+                </Link>
                 <Link href="/contact" className="bg-primary-500 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary-400 hover:shadow-lg hover:shadow-primary-500/50 transition-all transform hover:scale-105">
                   Get Started
                 </Link>
@@ -432,6 +435,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-500">
                 <li><Link href="/about" className="hover:text-primary-400 transition-colors">About</Link></li>
                 <li><Link href="/products" className="hover:text-primary-400 transition-colors">Products</Link></li>
+                <li><Link href="/blog" className="hover:text-primary-400 transition-colors">Blog</Link></li>
                 <li><Link href="/contact" className="hover:text-primary-400 transition-colors">Contact</Link></li>
               </ul>
             </div>
