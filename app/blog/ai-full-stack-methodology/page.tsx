@@ -154,7 +154,10 @@ export default function AIFullStackMethodologyPost() {
               product, and process—and ship a real product with real users as a solo engineer.&quot;
             </p>
 
-            <p className="mt-8 text-sm text-gray-500">
+            <p className="mt-8 text-gray-400">
+              Hell, I used AI to write this blog post.
+            </p>
+            <p className="mt-4 text-sm text-gray-500">
               Views and methodology are my own. Built and documented as part of personal and
               side-project work.
             </p>
