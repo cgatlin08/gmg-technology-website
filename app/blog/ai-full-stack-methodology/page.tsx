@@ -151,9 +151,7 @@ export default function AIFullStackMethodologyPost() {
             <h2>One-liner</h2>
             <p className="rounded-xl bg-dark-card border border-dark-border p-6 text-gray-300 italic">
               &quot;I use AI across the full stack—architecture, infrastructure, database, application,
-              product, and process—and ship a real product with real users as a solo engineer.&quot;
-              <br /><br />
-              Hell, I used AI to write this blog post.
+              product, and process—and ship a real product with real users as a solo engineer. Hell, I used AI to write this blog post.&quot;
             </p>
 
             <p className="mt-8 text-sm text-gray-500">
