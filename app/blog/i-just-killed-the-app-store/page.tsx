@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
   description:
-    'I was up late thinking about why I was waiting weeks for Apple to approve bug fixes. By morning, I had moved my entire mobile experience to the browser. Here\'s what happened.',
+    'I was waiting on Apple to approve an in-app purchase. I asked myself why I was doing this — it went against everything I stand for. So I applied my methodology and moved the entire experience to the browser.',
   openGraph: {
     title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
     description:
-      'I was up late thinking about why I was waiting weeks for Apple to approve bug fixes. By morning, I had moved my entire mobile experience to the browser.',
+      'I was waiting on Apple to approve an in-app purchase. I asked myself why I was doing this. So I applied my methodology and moved everything to the browser.',
   },
 }
 
@@ -55,39 +55,50 @@ export default function KilledTheAppStorePost() {
 
           <div className="space-y-6 text-gray-400 leading-relaxed [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-10 [&_h2]:mb-3 [&_strong]:text-white [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_blockquote]:border-l-4 [&_blockquote]:border-primary-500/40 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-300">
 
-            <h2>The late night</h2>
+            <h2>The wait that broke something</h2>
             <p>
-              It was past midnight. I should have been asleep, but I was staring at my phone, refreshing
-              the App Store Connect dashboard for the third time that day. Still &quot;In Review.&quot; A bug fix.
-              Three lines of code. And I was on day four of waiting for a human at Apple to look at it
-              and press approve.
+              I was waiting for Apple to approve an in-app purchase. Not a new feature. Not a redesign.
+              An IAP. The kind of thing that should be routine — configure, submit, done. But it wasn&apos;t
+              done. It was sitting in a queue, waiting for a human I&apos;d never meet to review it on a
+              timeline I couldn&apos;t control.
             </p>
             <p>
-              I&apos;d been here before. Every engineer who ships to the App Store has. You fix something on
-              Monday, submit it, and your users don&apos;t get it until the following week — if you&apos;re lucky.
-              If Apple has questions about your metadata, or your screenshots, or whether your description
-              accurately reflects your in-app purchase flow, add another week. Maybe two.
+              And while I was waiting, something clicked. Not a new thought — more like one I&apos;d been
+              suppressing. I asked myself: <strong>why am I doing this?</strong>
             </p>
             <p>
-              But this time it hit different. Because the night before, I&apos;d been documenting my
-              methodology — what I call the <strong>AI Full-Stack Methodology</strong>. The whole
-              premise is that AI compresses every phase of building software: architecture in minutes,
-              infrastructure in a session, code in hours. I&apos;d mapped out six phases where AI collapses
-              the timeline. And then I looked at my App Store submission, sitting in a queue, waiting for
-              a person I&apos;d never meet to give me permission to ship my own code.
+              This goes against everything I stand for. I build to innovate. I build to ship fast. I
+              build because the speed between idea and product should be as short as humanly possible.
+              And here I was, sitting idle, waiting for permission to monetize my own app from a company
+              that takes 30% of it for the privilege.
             </p>
             <p>
-              That was the moment. Not a grand epiphany. More like finally seeing something that had been
-              obvious all along: <strong>I had optimized every phase of my pipeline except the one that
-              mattered most — getting the product to users.</strong>
+              I couldn&apos;t innovate. I couldn&apos;t ship. I was stuck in someone else&apos;s pipeline. And I
+              realized: <strong>I needed a different avenue entirely.</strong>
             </p>
 
-            <h2>The question I couldn&apos;t shake</h2>
+            <h2>The methodology I&apos;d just built</h2>
             <p>
-              I kept turning it over: why am I building at the speed of AI but shipping at the speed of
-              Apple? My architecture sessions take 20 minutes. My infrastructure deploys in one sitting.
-              I can write, test, and push a feature in a single session. But then I hand the build to
-              Apple and... wait. Days. Sometimes weeks.
+              The timing wasn&apos;t an accident. The night before, I&apos;d been documenting what I call the
+              <strong> AI Full-Stack Methodology</strong> — a framework for how I use AI across every
+              phase of building software. Not just code generation. Architecture, infrastructure,
+              database, application, product, and process. Six phases where AI compresses the timeline
+              from weeks to sessions.
+            </p>
+            <p>
+              I&apos;d just finished writing it down. I was proud of it. And then I looked at my App Store
+              dashboard and realized the framework had a blind spot. I had optimized every phase of
+              building — but I hadn&apos;t touched the phase that actually gets the product to users.
+              Distribution was still running on someone else&apos;s clock.
+            </p>
+            <p>
+              So I did what the methodology is built for. I asked the question the framework demands:
+              <strong> what&apos;s the constraint, and can I engineer around it?</strong>
+            </p>
+
+            <h2>Why do you even need an iOS app anymore?</h2>
+            <p>
+              That was the question. And once I said it out loud, I couldn&apos;t unsay it.
             </p>
             <p>
               The App Store made sense in 2008. Browsers couldn&apos;t do what native apps could. You needed
@@ -95,16 +106,20 @@ export default function KilledTheAppStorePost() {
               distribution channel because it was the only distribution channel.
             </p>
             <p>
-              But it&apos;s 2026 now. Browsers support push notifications on iOS. PWAs can go full-screen
-              from the home screen. The Geolocation API works in Safari. My app is fundamentally a UI
-              layer that talks to Supabase — real-time data, authentication, edge functions. None of
-              that requires a native binary. None of it requires Apple&apos;s permission.
+              But it&apos;s 2026. Browsers support push notifications on iOS. PWAs can go full-screen from
+              the home screen. The Geolocation API works in Safari. My app is fundamentally a UI layer
+              that talks to Supabase — real-time data, authentication, edge functions. None of that
+              requires a native binary. None of it requires Apple&apos;s approval. None of it requires
+              their IAP system or their 30% cut.
             </p>
             <p>
-              I couldn&apos;t shake the question: <strong>what if I just... didn&apos;t need them anymore?</strong>
+              The answer was obvious: <strong>just build it in the browser. Make it run just like
+              the app.</strong> Same features, same feel, same data — but delivered through a channel
+              I control completely. And with my methodology, I knew exactly how to do it in a single
+              session.
             </p>
 
-            <h2>What I built (the product)</h2>
+            <h2>The product</h2>
             <p>
               Some context. I build <strong>Weekend Warrior Golf</strong> — an app for organizing weekend
               golf games. Real users, real money tracking, real games being scored on actual golf courses.
@@ -113,60 +128,68 @@ export default function KilledTheAppStorePost() {
               a toy project. People use it every Saturday.
             </p>
             <p>
-              The app was Flutter for iOS and Android, Next.js for the website, and Supabase for
+              The stack was Flutter for iOS and Android, Next.js for the website, and Supabase for
               everything backend — auth, Postgres, real-time subscriptions, edge functions. The website
-              already had some functional pages — game management, scorecard, leagues — but they were
-              designed for desktop. On a phone, the sidebar ate the whole screen and half the pages had
+              already had functional pages — game management, scorecard, leagues — but they were built
+              for desktop. On a phone, the sidebar ate the whole screen and half the pages had
               desktop-only padding.
             </p>
 
-            <h2>The session</h2>
+            <h2>Applying the methodology</h2>
             <p>
-              By morning I&apos;d made the decision. I sat down with Cursor and started.
+              Here&apos;s how the AI Full-Stack Methodology turned this from a frustration into a shipped
+              product in one session.
             </p>
+
             <p>
-              The first thing I did was rip out the desktop-only sidebar on mobile and replace it with
-              what my Flutter app already had: a <strong>bottom tab bar</strong>. Home, Games, Tee Off
-              (the big green &quot;+&quot; in the center), Leagues, Profile. Same pattern, same mental model.
-              Everything else — admin pages, stats, reports, settings — went into a hamburger slide-out
-              menu. Desktop kept the sidebar exactly as it was.
+              <strong>Phase 1 — Architecture.</strong> I started by mapping the gap between the Flutter
+              app and the web app. What did mobile users need that the website didn&apos;t have? Bottom tab
+              navigation, a home hub, mobile-first game builder, touch-friendly scorecard, PWA support.
+              AI helped me audit every authenticated page and plan the migration in minutes, not hours.
             </p>
+
             <p>
-              Then I built the <strong>Home Hub</strong> — the page users see after login. In the Flutter
-              app, this shows your active games, recently completed rounds, game management counts,
-              leagues, and a big &quot;Tee Off&quot; button. I built the same thing on the web, hitting the same
-              Supabase tables, showing the same colored cards per game type (Wolf is orange, Best Ball
-              is green, Skins is gold). Same data, same feel, different rendering engine.
+              <strong>Phase 2 — Infrastructure.</strong> The infrastructure was already in place —
+              Supabase handles auth, database, real-time, and edge functions. Vercel handles deployment.
+              No new servers, no new services. The web app hits the exact same backend the Flutter app
+              does. One API, two clients.
             </p>
+
             <p>
-              Next was the game builder. The Flutter app defaults your home course from your profile,
-              lets you search clubs by name or city, auto-selects the course if there&apos;s only one, and
-              lets you apply saved templates. The web version had a flat dropdown of every course in the
-              database. I replaced it with the same club-first search flow — home club pre-loaded,
-              searchable, with saved template support.
+              <strong>Phase 3 — Database.</strong> Zero changes. The schema, the RLS policies, the
+              real-time subscriptions — all of it already existed because the Flutter app and the web
+              app share the same Supabase project. This is the payoff of building API-first from day one.
             </p>
+
             <p>
-              Then I went through every authenticated page — games list, game detail, scorecard, players,
-              results, stats, reports, profile, leagues — and made them mobile-first. Padding, typography,
-              touch targets, the works. The scorecard already scrolled horizontally for 18 holes, but
-              the 3-putt and OTF toggle buttons were hidden behind hover states that don&apos;t exist on
-              touch screens. Fixed.
+              <strong>Phase 4 — Application.</strong> This was the session. I sat down with Cursor and
+              started building. Ripped out the desktop sidebar on mobile, replaced it with a bottom tab
+              bar matching the Flutter app — Home, Games, Tee Off, Leagues, Profile. Built the Home Hub
+              with the same colored cards per game type. Rebuilt the game builder with club-first search
+              and saved templates. Went through every page — scorecard, players, results, stats,
+              profile — and made them mobile-first. Added PWA support: manifest, iOS meta tags, viewport
+              config, safe area insets. &quot;Add to Home Screen&quot; gives you a full-screen app icon with no
+              browser chrome.
             </p>
+
             <p>
-              Finally, PWA support. Manifest file, iOS meta tags, viewport configuration, safe area
-              insets for the notch. &quot;Add to Home Screen&quot; in Safari gives you a full-screen app icon
-              with no browser chrome. To the user, it looks and feels like a native app.
+              <strong>Phase 5 — Product.</strong> The product decision was the catalyst. Subscriptions
+              and purchases would happen on the web, on my terms, with no 30% cut and no review queue.
+              Users get the same experience. I get control of my own revenue.
             </p>
+
             <p>
-              Push to GitHub. Vercel deploys. Live.
+              <strong>Phase 6 — Process.</strong> Push to GitHub. Vercel deploys in 60 seconds. Live.
+              No build archive. No App Store Connect. No waiting. The process is: write, test, push, ship.
             </p>
+
             <p>
               <strong>The whole thing took one session.</strong>
             </p>
 
             <h2>What changed</h2>
             <p>
-              Before yesterday, my deployment pipeline looked like this:
+              Before, my deployment pipeline looked like this:
             </p>
             <ul>
               <li>Write code (hours)</li>
@@ -188,14 +211,13 @@ export default function KilledTheAppStorePost() {
             </ul>
             <p>
               Same backend. Same features. Same Supabase queries, same real-time leaderboard, same
-              game logic. The only thing I removed from the equation was Apple&apos;s permission.
+              game logic. The only thing I removed was the gatekeeper.
             </p>
 
-            <h2>The 7th phase</h2>
+            <h2>The 7th phase: Distribution</h2>
             <p>
-              That late night, when I was staring at my methodology document and my App Store dashboard
-              at the same time, I realized something was missing from the framework. I had six phases:
-              Architecture, Infrastructure, Database, Application, Product, Process. But I didn&apos;t have
+              That night, staring at my methodology document and my App Store dashboard at the same
+              time, I realized the framework was missing something. I had six phases. But I didn&apos;t have
               one for how the product actually reaches users.
             </p>
             <p>
@@ -205,7 +227,7 @@ export default function KilledTheAppStorePost() {
               Distribution is a first-class engineering decision, not something you accept as a given.
               If your stack is API-first and your client is a view layer, you get to choose where that
               view layer runs. The browser is a view layer you control completely — no gatekeepers, no
-              revenue share, no review queue.
+              revenue share, no review queue, no IAP tax.
             </p>
             <blockquote>
               <p>
@@ -213,6 +235,26 @@ export default function KilledTheAppStorePost() {
                 I removed it.
               </p>
             </blockquote>
+
+            <h2>How I got here</h2>
+            <p>
+              This didn&apos;t come from reading a blog post or watching a conference talk. It came from
+              building. Months of building a real product with real users, using AI across every phase,
+              and documenting what worked.
+            </p>
+            <p>
+              The methodology came first — born from the daily practice of using AI to architect systems,
+              provision infrastructure, design schemas, write code, and ship features. I wrote it down
+              because I noticed patterns: the same approach kept working across wildly different problems.
+              Plan with AI, execute with AI, validate as a human. Six phases, one loop.
+            </p>
+            <p>
+              Then the IAP wait happened, and the methodology told me exactly what to do. It wasn&apos;t
+              rage. It wasn&apos;t impulse. It was the framework doing what frameworks do — showing you
+              the answer when you ask the right question. The question was: <strong>what&apos;s the
+              bottleneck?</strong> The answer was: <strong>the App Store.</strong> The solution was:
+              <strong> remove it.</strong>
+            </p>
 
             <h2>What I&apos;m not saying</h2>
             <p>
@@ -234,7 +276,7 @@ export default function KilledTheAppStorePost() {
               The gap between &quot;web app on a phone&quot; and &quot;native app&quot; has mostly closed. PWAs support
               push notifications, offline storage, home screen icons, and full-screen mode on iOS.
               The browser isn&apos;t a compromise anymore. It&apos;s a choice. And it&apos;s a choice that gives you
-              back control of your entire pipeline.
+              back control of your entire pipeline — from architecture to revenue.
             </p>
             <p>
               Build and ship. That&apos;s the methodology. Every phase — from architecture to the user&apos;s

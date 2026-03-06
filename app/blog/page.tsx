@@ -12,7 +12,7 @@ const posts = [
     slug: 'i-just-killed-the-app-store',
     title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
     description:
-      'I was up late thinking about why I was waiting weeks for Apple to approve bug fixes. By morning, I had moved my entire mobile experience to the browser. Here\'s what happened.',
+      'I was waiting on Apple to approve an in-app purchase and asked myself why. It went against everything I stand for. So I applied my methodology and moved the entire experience to the browser.',
     date: '2026-03-06',
   },
   {
