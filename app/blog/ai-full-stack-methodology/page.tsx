@@ -61,6 +61,11 @@ export default function AIFullStackMethodologyPost() {
               every step. That&apos;s the methodology I&apos;m documenting here.
             </p>
 
+            <p className="rounded-xl bg-dark-card border border-dark-border p-6 text-lg text-gray-300 italic">
+              The products are the passion; the methodology is the soul. Building real apps is what
+              drives using AI across the full stack—not the other way around.
+            </p>
+
             <h2>What &quot;AI full-stack&quot; means</h2>
             <p>
               Most &quot;AI-assisted development&quot; stories stop at &quot;I use Copilot to write functions.&quot; That&apos;s

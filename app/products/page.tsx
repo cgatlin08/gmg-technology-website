@@ -61,12 +61,9 @@ export default function Products() {
               <p className="text-gray-400 mb-6 text-lg leading-relaxed">
                 Full-stack platform for competitive golfers: web dashboard plus iOS & Android apps. Manage groups, leagues, and tournaments with live scoring and 8+ game formats.
               </p>
-              <div className="flex items-center justify-between">
-                <span className="px-4 py-2 bg-primary-500/20 rounded-full text-primary-400 font-bold text-sm">$59.99 / $24.99 per year</span>
-                <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
-                  weekendwarriorgolf.com →
-                </a>
-              </div>
+              <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
+                weekendwarriorgolf.com →
+              </a>
             </div>
 
             {/* Club Pro GMS */}

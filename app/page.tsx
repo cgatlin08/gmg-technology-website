@@ -202,14 +202,9 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="flex items-center justify-between">
-                <div className="px-4 py-2 bg-primary-500/20 rounded-full">
-                  <span className="text-primary-400 font-bold text-sm">$59.99 / $24.99 per year</span>
-                </div>
-                <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
-                  weekendwarriorgolf.com →
-                </a>
-              </div>
+              <a href="https://weekendwarriorgolf.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 text-sm font-bold transition-colors">
+                weekendwarriorgolf.com →
+              </a>
             </div>
 
             {/* Club Pro GMS */}
