@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
+  title: 'Did I Just Kill the App Store?',
   description:
     'I was waiting on Apple to approve an in-app purchase. I asked myself why I was doing this — it went against everything I stand for. So I applied my methodology and moved the entire experience to the browser.',
   openGraph: {
-    title: 'I Just Killed the App Store — How I Bypassed Apple in One Session',
+    title: 'Did I Just Kill the App Store?',
     description:
       'I was waiting on Apple to approve an in-app purchase. I asked myself why I was doing this. So I applied my methodology and moved everything to the browser.',
   },
@@ -50,7 +50,7 @@ export default function KilledTheAppStorePost() {
         <article>
           <time className="text-sm text-gray-500">{publishedDate}</time>
           <h1 className="text-4xl md:text-5xl font-black text-white mt-2 mb-8">
-            I Just Killed the App Store
+            Did I Just Kill the App Store?
           </h1>
 
           <div className="space-y-6 text-gray-400 leading-relaxed [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-10 [&_h2]:mb-3 [&_strong]:text-white [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_blockquote]:border-l-4 [&_blockquote]:border-primary-500/40 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-300">
