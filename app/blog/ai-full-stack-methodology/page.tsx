@@ -55,15 +55,26 @@ export default function AIFullStackMethodologyPost() {
 
           <div className="space-y-6 text-gray-400 leading-relaxed [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-white [&_h2]:mt-10 [&_h2]:mb-3 [&_strong]:text-white [&_table]:w-full [&_th]:text-left [&_th]:py-3 [&_th]:text-white [&_td]:py-3 [&_td]:border-t [&_td]:border-dark-border">
             <p>
-              I&apos;ve been building a real product with real users—and I don&apos;t just use AI to write
-              code. I use it across the whole lifecycle: architecture, infrastructure, database,
-              application, product features, and how I run the project. One human, AI in the loop at
-              every step. That&apos;s the methodology I&apos;m documenting here.
+              I&apos;m a solo engineer. I built two production SaaS products — Weekend Warrior Golf, a
+              full-stack platform for competitive golfers with 8 game formats, real-time scoring, GPS
+              tracking, live leaderboards, and multi-platform mobile, and Club Pro GMS, a B2B course
+              management platform with a Voice AI agent that answers the phone and books tee times
+              24/7. Two products. Two markets. One engineer.
+            </p>
+
+            <p>
+              This is the methodology that made it possible.
+            </p>
+
+            <p>
+              I don&apos;t just use AI to write code. I use it across the entire lifecycle — architecture,
+              infrastructure, database, application, product, process, and distribution. One human.
+              AI in the loop at every step. That&apos;s the AI Full-Stack Methodology, and I&apos;m documenting
+              it here so other builders can adopt or adapt it.
             </p>
 
             <p className="rounded-xl bg-dark-card border border-dark-border p-6 text-lg text-gray-300 italic">
-              The products are the passion; the methodology is the soul. Building real apps is what
-              drives using AI across the full stack—not the other way around.
+              The products are the passion. The methodology is the soul.
             </p>
 
             <h2>What &quot;AI full-stack&quot; means</h2>
@@ -151,7 +162,7 @@ export default function AIFullStackMethodologyPost() {
             <h2>One-liner</h2>
             <p className="rounded-xl bg-dark-card border border-dark-border p-6 text-gray-300 italic">
               &quot;I use AI across the full stack—architecture, infrastructure, database, application,
-              product, and process—and ship a real product with real users as a solo engineer. Hell, I used AI to write this blog post.&quot;
+              product, and process—and ship a real product with real users as a solo engineer.&quot;
             </p>
 
             <p className="mt-8 text-sm text-gray-500">

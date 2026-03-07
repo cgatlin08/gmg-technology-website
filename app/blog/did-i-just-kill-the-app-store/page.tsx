@@ -268,31 +268,31 @@ export default function KilledTheAppStorePost() {
               <strong> remove it.</strong>
             </p>
 
-            <h2>What I&apos;m not saying</h2>
+            <h2>The question every builder needs to ask</h2>
             <p>
-              I&apos;m not saying native apps are dead. I&apos;m not saying the App Store is evil. I&apos;m saying
-              that for my use case — a data-driven app where 95% of the functionality is API calls
-              and UI — there&apos;s no technical reason to gate every update behind a third party&apos;s
-              approval process. The native app can stay on the store for users who prefer it. But the
-              web is now the primary distribution channel. The one I control. The one that ships when
-              I ship.
-            </p>
-
-            <h2>What this means for builders</h2>
-            <p>
-              If you&apos;re a solo engineer or a small team, and you&apos;re building on a modern stack —
-              Supabase, Firebase, any API-first backend — ask yourself: does your app actually need
-              to be native? Or have you just never questioned the assumption?
+              If you&apos;re a solo engineer or small team on a modern stack — Supabase, Firebase, any
+              API-first backend — ask yourself one question:
             </p>
             <p>
-              The gap between &quot;web app on a phone&quot; and &quot;native app&quot; has mostly closed. PWAs support
+              <strong>Does your app actually need to be native? Or have you just never questioned the assumption?</strong>
+            </p>
+            <p>
+              The gap between a web app on a phone and a native app has mostly closed. PWAs support
               push notifications, offline storage, home screen icons, and full-screen mode on iOS.
-              The browser isn&apos;t a compromise anymore. It&apos;s a choice. And it&apos;s a choice that gives you
-              back control of your entire pipeline — from architecture to revenue.
+              The browser isn&apos;t a compromise anymore. It&apos;s a choice.
             </p>
             <p>
-              Build and ship. That&apos;s the methodology. Every phase — from architecture to the user&apos;s
-              screen — should be under your control. And now, for the first time, it can be.
+              And it&apos;s a choice that gives you back full control of your pipeline — from architecture
+              to revenue. No gatekeeper. No revenue share. No review queue. No waiting for permission
+              to ship your own product.
+            </p>
+            <blockquote>
+              <p>
+                The App Store is the last human-approval bottleneck in an AI-accelerated pipeline.
+              </p>
+            </blockquote>
+            <p>
+              I removed it. You can too.
             </p>
 
             <p className="rounded-xl bg-dark-card border border-dark-border p-6 text-gray-300 italic mt-10">
